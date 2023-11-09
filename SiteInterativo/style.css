@@ -1,0 +1,413 @@
+*{margin: 0; padding: 0}
+
+@font-face {
+  font-family: 'SpideRaYsfoNtS';
+  src: url('justice_league/JUSTICE_LEAGUE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+body
+{
+  font-family: Verdana;
+  background-image: url("Imagens/liga-da-justica.png");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+img {
+  width: 300px;
+}
+.logo {
+  position: absolute;
+}
+
+h1, h3
+{
+  font-family: 'SpideRaYsfoNtS', sans-serif;
+  padding-top: 10px;
+  color: #fff;
+  opacity: 90%;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+}
+.secondary
+{
+ color: darkgoldenrod; 
+}
+main
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+/* Figura (imagem) */
+figure {
+  width: 25%;
+  margin: 2%;
+  display: inline-block;
+  position: relative;
+}
+
+/* Botão "Entrar no Quiz" */
+.enterQuiz {
+  position: absolute;
+  top: 80%;
+  right: 60%;
+  font-size: 4vw; 
+  color: whitesmoke;
+  text-decoration: none;
+  opacity: 0;
+  border: 0.5vw solid white;
+  border-radius: 1vw; 
+  padding: 1vw; 
+  transform: translate(50%, -50%); 
+}
+
+figure img{
+  width:80%;
+  border-radius: 10%;
+}
+n, li{
+  list-style-type: none;
+}
+a{
+  font-family: 'SpideRaYsfoNtS', sans-serif;
+}
+header{
+  background-color: #8c8c8c;
+  width: 100%; 
+  height: 100px;
+  opacity: 70%;
+}
+header img
+{
+  margin-left: 20px;
+  position:fixed;
+  max-width: 100px;
+  min-width: 100px;
+}
+nav {
+  position: absolute; 
+  right: 30PX;
+  bottom:px;
+}
+nav ul li{
+  position: relative;
+  float: left; 
+  margin: 0.8em; 
+  width: auto; 
+  font-size: 2.0em;
+  text-shadow: 1px 1px 1px black;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 0.5em;
+}
+/*Superman Página*/
+form{
+  margin-top: 20px;
+}
+.supermanTitle {
+  text-shadow: 3px 3px 3px #005cb8;
+  color: red;
+  font-size: 400%;
+}
+.supermanQuestions{
+  background-color: #005cb8;
+}
+
+.questions {
+  width: 70%;
+  margin: 0 auto;
+  opacity: 90%;
+  
+}
+
+.supermanStyle {
+  background-color: dodgerblue;
+  color: #fffafa;
+}
+section {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 10px;
+  margin: 5% 0 5% 0;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.supermanHeader {
+  background-color: dodgerblue;
+  color: red;
+}
+
+.heroTitle {
+  margin: 0 auto;
+  margin-top: 20px;
+  opacity: 100%;
+}
+
+p {
+  margin: 30px
+}
+
+section ul li {
+  margin: 20px;
+}
+
+.heroBody {
+  backdrop-filter: blur(5px);
+
+}
+.supermanReply {
+  background-color: red;
+  color: white;
+}
+
+p {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+li > span{
+  border: solid 2px #fffafa;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li > span:hover {
+    font-size: 20px;
+    padding: 15px;
+    color: lightgreen;
+}
+.supermanReply:hover{
+  background-color: #bf1d1d;
+  color: white
+}
+
+input {
+  cursor: pointer;
+  margin-right: 1%;
+}
+
+button {
+  padding: 10px 25px 10px 25px;
+  font-size: 20px;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: lightblue;
+  cursor: pointer;
+  box-shadow:  10px 5px 5px black;
+  }
+
+#limpar {
+  background-color: darkgray;
+  color: white;
+  margin-left:10px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+/*Batman página*/
+.batmanTitle {
+  text-shadow: 3px 3px 3px black;
+  color: yellow;
+  font-size: 400%;
+}
+
+.batmanHeader{
+  background-color: yellow;
+  color: #000;
+}
+
+.batmanStyle {
+  background-color: #565656;
+  color: yellow;
+}
+
+.batmanRespostas:hover {
+  background-color: #000;
+  color: yellow
+}
+
+.batmanPerguntas {
+  background-color: #000;
+  color: yellow;
+}
+
+/*Mulher Maravilha página*/
+.wonderTitle {
+  text-shadow: 3px 3px 3px darkred;
+  color: gold;
+  font-size: 400%;
+}
+
+.wonderHeader{
+  background-color: darkred;
+  color: gold
+}
+
+.wonderWomanStyle {
+  background-color: darkred;
+  color: gold;
+}
+
+.wonderWomanRespostas:hover {
+  background-color: #815f08;
+  color: gold;
+}
+
+.wonderWomanPerguntas {
+  background-color: #815f08;
+  color: gold;
+}
+
+/*Aquaman página*/
+.aquamanTitle {
+  text-shadow: 3px 3px 3px orangered;
+  color: darkgreen;
+  font-size: 400%;
+}
+
+.aquamanHeader{
+  background-color: orangered;
+  color: darkgreen
+}
+
+.aquamanStyle {
+  background-color: orangered;
+  color: white;
+}
+
+.aquamanRespostas:hover {
+  background-color: orange;
+  color: darkgreen
+}
+
+.aquamanPerguntas {
+  background-color: darkgreen;
+  color: orangered;
+}
+
+/*Flash página*/
+
+.flashTitle {
+  text-shadow: 3px 3px 3px #d80000;
+  color: orange;
+  font-size: 400%;
+}
+
+.flashHeader{
+  background-color: #d80000;
+  color: orange;
+}
+
+.flashStyle {
+  background-color: #d80000;
+  color: lightyellow;
+}
+
+.flashRespostas:hover {
+  background-color: gold;
+  color: orangered;
+}
+
+.flashPerguntas {
+  background-color: orange;
+  color: #d80000;
+}
+
+/*Cyborg página*/
+.cyborgTitle {
+  text-shadow: 3px 3px 3px darkgray;
+  color: darkred;
+  font-size: 400%;
+}
+
+.cyborgHeader{
+  background-color: darkgray;
+  color: darkred;
+}
+
+.cyborgStyle {
+  background-color: darkgray;
+  color: darkred;
+}
+
+.cyborgRespostas:hover {
+  background-color: darkred;
+  color: darkgray;
+}
+
+.cyborgPerguntas {
+  background-color: darkred;
+  color: darkgray;
+}
+
+.close {
+  padding: 5px 15px 5px 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+  box-shadow: none;
+
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+  text-shadow: 3px 3px 3px black;
+  background-image: url("Imagens/Liga-da-justica-modal.jpg");
+  background-size: cover;
+  background-attachment:fixed;
+  color: 	#F0FFFF;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 0 1em rgba(0, 0,0, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+p {
+  background-color: #a6a6a6;
+  opacity: 85%;
+}
+/* Sobre */
+#about {
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 3%;
+  background-color: #8c8c8c;
+  text-align: center;
+  width: 60%;
+  font-family: 'SpideRaYsfoNtS', sans-serif;
+  opacity: 90%;
+  font-size: 1.5vw;
+}
